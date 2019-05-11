@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+
+    <body>
+        <h1 align="center">Working with Tables</h1>
+        <!-- Table Structure
+            Caption: table title 
+            header: single row, (usually) for column headers
+            body: multiple rows presenting data
+            footer: single row (usually) for totals, summary, etc.
+
+            ---Title---
+            header1    |   header 2
+            Unordered list <ul><li>
+            Ordered list <ol><li>
+            Definition List <dl><dt><dd>
+
+            table row: <TR>
+            table header data: <TH>
+            table data: <TD>
+            ----------------
+            Formatting tables - not tables for formatting
+            (*): deprecated
+            Width / Align *
+            Border
+            Cell padding
+            Cell spacing
+            No wrap *
+        -->
+
+        <!-- 
+            Border=1 
+            frame = void | above | below | hsides | lhs | rhs | vsides | box | border
+            rules = nome | groups | rows | cols | all
+        -->
+        <table cellspacing="10px" cellpadding="10px" width="350em" align="center" border="2" summary="This table lists various elements related">
+            <caption>List Elements</caption>
+            <thead>
+                <tr>
+                    <th>List Types</th>
+                    <th>Tags</th>
+                    <th>Uses</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="3">List can be styled in many different ways.</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Unordered Lists</td>
+                    <td>&lt;ul&gt;,&lt;li&gt;</td>
+                    <td rowspan="2">Displaying a simple list of items</td>
+                </tr>
+                <tr>
+                    <td>Ordered lists</td>
+                    <td>&lt;ol&gt;,&lt;li&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>
