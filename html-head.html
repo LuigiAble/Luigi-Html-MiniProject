@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>My first page</title>
+        <meta name="Author" content="Luigi Aguirre" />
+        <meta name="Description" content="Sample for HTML course"/>
+        <meta name="keywords" content="pluralsight, HTML, sample"/>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+
+        <script type="text/javascript">
+            window.onload = function() {
+                //alert("Window loaded");
+                document.getElementById("myMessage").innerHTML = "Hello JavaScript";
+            };
+        </script>
+        <style type="text/css">
+            body {color: red}
+            .message {color: green}
+        </style>
+        <!--
+        <base href="https://pici-staging.herokuapp.com/"/> -->
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+
+    <body>
+        <h1>Semantic Web</h1>
+
+        <p id="myMessage" class="message"Hello World></p>
+    </body>
+</html>
